@@ -161,3 +161,7 @@ docker-compose down && docker-compose up
 # Referências utilizadas
 
 [1° Conteinerização de scripts em Python](https://github.com/claudimf/containerized_python)
+
+[2° Base do projeto](https://github.com/alura-cursos/testes-python)
+
+[3° Montando cenários de testes com o Pytest](https://www.alura.com.br/artigos/montando-cenarios-de-testes-com-o-pytest)
