@@ -110,6 +110,8 @@ Para executar a suite de testes do python, faça conforme o exemplo abaixo:
 docker-compose run --rm app python -m unittest leilao/test_avaliador.py
 ```
 
+## Testes:
+
 Para executar a suite de testes do python via coverage, faça conforme o exemplo abaixo:
 ```sh
 docker-compose run --rm app coverage run -m unittest leilao/test_avaliador.py
@@ -118,6 +120,11 @@ docker-compose run --rm app coverage run -m unittest leilao/test_avaliador.py
 Para gerar o coverage report, faça conforme o exemplo abaixo:
 ```sh
 docker-compose run --rm app coverage html
+```
+
+Para abri o coverage report no seu Chrome, faça conforme o exemplo abaixo:
+```sh
+google-chrome src/htmlcov/index.html
 ```
 
 ## Listar pacotes:
