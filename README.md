@@ -105,6 +105,11 @@ Para executar um script python, faça conforme o exemplo abaixo:
 docker-compose run --rm app python aulas/01.py
 ```
 
+Para executar a suite de testes do python, faça conforme o exemplo abaixo:
+```sh
+docker-compose run --rm app python -m unittest leilao/test_avaliador.py
+```
+
 ## Listar pacotes:
 ```sh
 docker-compose run --rm app pipdeptree
