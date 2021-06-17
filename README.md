@@ -110,6 +110,16 @@ Para executar a suite de testes do python, faça conforme o exemplo abaixo:
 docker-compose run --rm app python -m unittest leilao/test_avaliador.py
 ```
 
+Para executar a suite de testes do python via coverage, faça conforme o exemplo abaixo:
+```sh
+docker-compose run --rm app coverage run -m unittest leilao/test_avaliador.py
+```
+
+Para gerar o coverage report, faça conforme o exemplo abaixo:
+```sh
+docker-compose run --rm app coverage html
+```
+
 ## Listar pacotes:
 ```sh
 docker-compose run --rm app pipdeptree
@@ -170,3 +180,9 @@ docker-compose down && docker-compose up
 [2° Base do projeto](https://github.com/alura-cursos/testes-python)
 
 [3° Montando cenários de testes com o Pytest](https://www.alura.com.br/artigos/montando-cenarios-de-testes-com-o-pytest)
+
+[4° Coverage.py](https://coverage.readthedocs.io/en/coverage-5.5/)
+
+[5° An Introduction to Unit Testing in Python](https://www.freecodecamp.org/news/an-introduction-to-testing-in-python/)
+
+[6° How to Create Documentation from Your Python Tests](https://www.freecodecamp.org/news/how-to-create-documentation-from-your-python-tests/)

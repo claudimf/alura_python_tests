@@ -3,3 +3,4 @@ pipdeptree==2.0.0
 
 # Demais bibliotecas
 requests==2.25.1
+coverage==5.5
