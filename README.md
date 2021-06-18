@@ -193,3 +193,5 @@ docker-compose down && docker-compose up
 [5° An Introduction to Unit Testing in Python](https://www.freecodecamp.org/news/an-introduction-to-testing-in-python/)
 
 [6° How to Create Documentation from Your Python Tests](https://www.freecodecamp.org/news/how-to-create-documentation-from-your-python-tests/)
+
+[7° Outras formas comuns de nomear os testes](https://dzone.com/articles/7-popular-unit-test-naming)
