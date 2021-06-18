@@ -105,12 +105,12 @@ Para executar um script python, faça conforme o exemplo abaixo:
 docker-compose run --rm app python aulas/01.py
 ```
 
+## Testes com UnitTest:
+
 Para executar a suite de testes do python, faça conforme o exemplo abaixo:
 ```sh
 docker-compose run --rm app python -m unittest leilao/test_avaliador.py
 ```
-
-## Testes:
 
 Para executar a suite de testes do python via coverage, faça conforme o exemplo abaixo:
 ```sh
@@ -125,6 +125,16 @@ docker-compose run --rm app coverage html
 Para abri o coverage report no seu Chrome, faça conforme o exemplo abaixo:
 ```sh
 google-chrome src/htmlcov/index.html
+```
+
+## Testes com PyTest:
+Dentro do projeto:
+```sh
+docker-compose run --rm app python -m unittest tests/test_leilao.py
+```
+Fora do projeto
+```sh
+docker-compose run --workdir="/" --rm app python -m unittest tests/test_leilao.py
 ```
 
 ## Listar pacotes:
@@ -197,3 +207,5 @@ docker-compose down && docker-compose up
 [7° Outras formas comuns de nomear os testes](https://dzone.com/articles/7-popular-unit-test-naming)
 
 [8° Como fazer uma cópia de uma lista no Python](https://www.alura.com.br/artigos/como-fazer-copia-de-lista-python)
+
+[9° PyTest](https://docs.pytest.org/en/6.2.x/)

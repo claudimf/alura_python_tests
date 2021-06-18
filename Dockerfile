@@ -7,6 +7,9 @@ WORKDIR /code
 # copy the content of the local src directory to the working directory
 COPY src/ .
 
+# copy the content of the local src directory to the working directory
+COPY tests/ ./
+
 # copy the dependencies file to the working directory
 COPY requirements.txt .
 
