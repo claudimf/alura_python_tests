@@ -195,3 +195,5 @@ docker-compose down && docker-compose up
 [6° How to Create Documentation from Your Python Tests](https://www.freecodecamp.org/news/how-to-create-documentation-from-your-python-tests/)
 
 [7° Outras formas comuns de nomear os testes](https://dzone.com/articles/7-popular-unit-test-naming)
+
+[8° Como fazer uma cópia de uma lista no Python](https://www.alura.com.br/artigos/como-fazer-copia-de-lista-python)
