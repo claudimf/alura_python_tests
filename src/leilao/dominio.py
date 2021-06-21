@@ -8,6 +8,9 @@ class Usuario:
         self.__carteira = carteira
 
     def propoe_lance(self, leilao, valor):
+        if valor > self.__carteira:
+            raise ValueError('Não pode propor um lance com o valor maior que o valor da carteira')
+
         lance = Lance(self, valor)
         leilao.propoe(lance)
 
@@ -15,11 +18,11 @@ class Usuario:
 
     @property 
     def nome(self):
-            return self.__nome
+        return self.__nome
 
     @property
     def carteira(self):
-            return self.__carteira
+        return self.__carteira
 
 
 class Lance:

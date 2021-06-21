@@ -141,6 +141,14 @@ docker-compose run --workdir="/" --rm app python -m pytest tests/test_usuario.py
 
 docker-compose run --workdir="/" --rm app python -m pytest tests/
 
+docker-compose run --workdir="/" --rm app python -m pytest tests/test_usuario.py::test_deve_subtrair_valor_da_carteira_do_usuario_quando_este_propor_um_lance
+
+docker-compose run --workdir="/" --rm app coverage run -m pytest tests/
+
+docker-compose run --workdir="/tests" --rm app coverage html
+
+google-chrome tests/htmlcov/index.html
+
 ## Listar pacotes:
 ```sh
 docker-compose run --rm app pipdeptree
